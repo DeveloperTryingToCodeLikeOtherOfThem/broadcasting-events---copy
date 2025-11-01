@@ -12,7 +12,7 @@ namespace events {
      //% blockId="events_on_receive_broadcast" block="on receive $message"
     //% message.shadow="color_enum_shim"
    //% weight=99
-   //% message.shadow=text
+   //% message.shadow=text handlerStatement=1
     export function onReceive(message: BroadcastMessage | string, handler: () => void) {
         if (_id === message) handler()
         else return
